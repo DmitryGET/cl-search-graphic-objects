@@ -1,0 +1,12 @@
+path: /content/dataset/
+train: 'train'
+val: 'val'
+ 
+# class names
+names: 
+  0: 'tinkoff'
+  1: 'naumen'
+  2: 'rostelecom'
+  3: 'ussc'
+  4: 'sber'
+  5: 'gosuslugi'
