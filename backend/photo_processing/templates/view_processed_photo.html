@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Обработанное изображение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+            box-shadow: 3px 3px 5px #888888;
+        }
+        .download-link {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Обработанное изображение</h1>
+        <img src="{{ photo }}" alt="Обработанное изображение">
+        <a href="{{ photo }}" download class="download-link">Скачать изображение</a>
+        <br>
+        <br>
+        <a href="{% url 'upload_photo' %}">Загрузить еще фото</a>
+    </div>
+</body>
+</html>
