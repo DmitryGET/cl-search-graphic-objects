@@ -7,4 +7,10 @@ class PhotoUploadForm(forms.ModelForm):
         model = Photo
         fields = ["image"]
 
+    CHOICES = [
+        ('YOLO', 'YOLO'),
+        ('FastRCNN', 'FastRCNN')
+    ]
+
+    model = forms.ChoiceField(choices=CHOICES, widget=forms.Select(attrs={'class': 'form-control'}))
     image = forms.ImageField(label="Выберите фото")
