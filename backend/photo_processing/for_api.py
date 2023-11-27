@@ -3,6 +3,7 @@ import shutil
 
 import cv2
 import torch
+from django.conf import settings
 from torchvision import datasets, models
 from torchvision import transforms as T
 from torchvision.utils import draw_bounding_boxes
@@ -29,24 +30,28 @@ model.to(device)
 model.eval()
 
 
-def single_image_prediction(image_path: str, save_path: str, threshold: float, model_type):
+def single_image_prediction(
+    image_path: str, save_path: str, threshold: float, model_type
+):
     image = cv2.imread(image_path)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
     if model_type == "YOLO":
         weights_path = r"photo_processing\yolo_banking.pt"
         model1 = YOLO(weights_path)
-        project = r"C:\Programming\PyScripts\gg\photo_processing_project\media\processed_photos"
+        project = settings.MEDIA_ROOT + r"\processed_photos"
         name = "pic"
-        tt = r"C:\Programming\PyScripts\gg\photo_processing_project\media\processed_photos\pic"
+        tt = settings.MEDIA_ROOT + r"\processed_photos\pic"
         try:
             # Перед удалением удостоверьтесь, что путь существует и является директорией
             if os.path.exists(tt) and os.path.isdir(tt):
                 shutil.rmtree(tt)
         except Exception as e:
             print(f"Ошибка при удалении директории {tt}: {e}")
-        a = model1.predict(image_path, iou=0.95, conf=0.6, project=project, name=name, save=True)
-        return "C:\Programming\PyScripts\gg\photo_processing_project\media\processed_photos\pic"
+        a = model1.predict(
+            image_path, iou=0.95, conf=0.5, project=project, name=name, save=True
+        )
+        return tt
     else:
         transform = T.Compose([T.ToTensor()])
         tensor = transform(image)
@@ -67,7 +72,7 @@ def single_image_prediction(image_path: str, save_path: str, threshold: float, m
                     for i in pred["labels"][pred["scores"] > threshold].tolist()
                 ],
                 width=4,
-                colors="green"
+                colors="green",
             ).permute(1, 2, 0)
         )
         plt.savefig(save_path, bbox_inches="tight", pad_inches=0)
