@@ -1,7 +1,6 @@
 
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
 
 
 <br />
@@ -26,11 +25,11 @@
 
 ### Стэк
 
-* ![PyTorch]({https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white})
-* ![OpenCV]({https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white})
-* ![Pandas]({https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white})
-* ![NumPY]({https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white})
-* ![Django]({https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green})
+* ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+* ![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
+* ![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
+* ![NumPY](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
+* ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
 * ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
