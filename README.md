@@ -29,7 +29,7 @@
 * ![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
 * ![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
 * ![NumPY](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
-* ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
+* ![Django]({https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green})
 * ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -45,14 +45,39 @@
    git clone https://github.com/DmitryGET/cl-search-graphic-objects.git
    ```
 2. Зайти в папку backend
-4. Ввести следующие команды в консоль
+4. Создать виртуальное окружение
    ```sh
    python -m venv venv
-   .\venv\Scripts\activate
-   pip install -r  requirements.txt
-   python manage.py runserver
    ```
+5. Активировать его
+  ```sh
+   .\venv\Scripts\activate
+  ```
+6. Установить зависимости
+  ```sh
+   pip install -r  requirements.txt
+  ```
+7. Запустить сервер и перейти по адресу
+  ```sh
+   python manage.py runserver
+  ```
+8. Выбрать 
+  ```sh
+  http://127.0.0.1:8000/photo_processing/upload_photo/
+  ```
+
+<div align="center">
+  <img src="images/example1.png" alt="Logo">
+  <img src="images/example2.png" alt="Logo">
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## Требования
+
+* ##### OS (Windows (10, 8.1, 8), Linux, MacOS)
+* ##### Python 3.8 и выше
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
