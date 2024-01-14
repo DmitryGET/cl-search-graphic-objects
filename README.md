@@ -67,8 +67,8 @@
   ```
 
 <div align="center">
-  <img src="images/example1.png" alt="Logo" height="250">
-  <img src="images/example2.png" alt="Logo" height="250">
+  <img src="images/example1.png" alt="Logo" height="350">
+  <img src="images/example2.png" alt="Logo" height="350">
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
