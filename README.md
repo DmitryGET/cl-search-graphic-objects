@@ -50,21 +50,21 @@
    python -m venv venv
    ```
 4. Активировать его
-  ```sh
+   ```sh
    .\venv\Scripts\activate
-  ```
+   ```
 5. Установить зависимости
-  ```sh
+   ```sh
    pip install -r  requirements.txt
-  ```
+   ```
 6. Запустить сервер и перейти по адресу
-  ```sh
+   ```sh
    python manage.py runserver
-  ```
+   ```
 7. Выбрать 
-  ```sh
-  http://127.0.0.1:8000/photo_processing/upload_photo/
-  ```
+   ```sh
+   http://127.0.0.1:8000/photo_processing/upload_photo/
+   ```
 
 <div align="center">
   <img src="images/example1.png" alt="Logo" height="350">
