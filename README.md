@@ -2,6 +2,8 @@
 <a name="readme-top"></a>
 
 
+[![Contributors][contributors-shield]][contributors-url]
+
 
 <br />
 <div align="center">
@@ -81,3 +83,5 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-url]: https://github.com/DmitryGET/cl-search-graphic-objects/graphs/contributors
