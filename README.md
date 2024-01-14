@@ -45,23 +45,23 @@
    git clone https://github.com/DmitryGET/cl-search-graphic-objects.git
    ```
 2. Зайти в папку backend
-4. Создать виртуальное окружение
+3. Создать виртуальное окружение
    ```sh
    python -m venv venv
    ```
-5. Активировать его
+4. Активировать его
   ```sh
    .\venv\Scripts\activate
   ```
-6. Установить зависимости
+5. Установить зависимости
   ```sh
    pip install -r  requirements.txt
   ```
-7. Запустить сервер и перейти по адресу
+6. Запустить сервер и перейти по адресу
   ```sh
    python manage.py runserver
   ```
-8. Выбрать 
+7. Выбрать 
   ```sh
   http://127.0.0.1:8000/photo_processing/upload_photo/
   ```
