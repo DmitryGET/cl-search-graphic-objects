@@ -83,5 +83,5 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/DmitryGET/cl-search-graphic-objects.svg?style=for-the-badge
 [contributors-url]: https://github.com/DmitryGET/cl-search-graphic-objects/graphs/contributors
