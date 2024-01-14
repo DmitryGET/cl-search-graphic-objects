@@ -29,7 +29,7 @@
 * ![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
 * ![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
 * ![NumPY](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
-* ![Django]({https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green})
+* ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
 * ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -67,8 +67,8 @@
   ```
 
 <div align="center">
-  <img src="images/example1.png" alt="Logo">
-  <img src="images/example2.png" alt="Logo">
+  <img src="images/example1.png" alt="Logo" height="250">
+  <img src="images/example2.png" alt="Logo" height="250">
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
