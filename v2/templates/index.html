@@ -51,7 +51,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Загрузка изображения</h1>
+        <h1>Загрузка изображений</h1>
         <form action="/predict" method="post" enctype="multipart/form-data">
             <label for="logo_class">Выберите тип логотипа:</label>
             <select id="logo_class" name="logo_class" required>
@@ -67,10 +67,10 @@
                 <option value="visa">Visa</option>
             </select>
 
-            <label for="file">Выберите изображение для поиска логотипов:</label>
-            <input type="file" id="file" name="file" accept="image/*" required>
+            <label for="files">Выберите изображения для поиска логотипов:</label>
+            <input type="file" id="files" name="files" accept="image/*" multiple required>
 
-            <button type="submit">Predict</button>
+            <button type="submit">Обработать</button>
         </form>
     </div>
 </body>

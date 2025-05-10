@@ -24,11 +24,67 @@
             margin-bottom: 20px;
             font-weight: normal;
         }
-        img {
+        .carousel {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto 30px;
+        }
+        .carousel img {
             max-width: 100%;
             height: auto;
             border: 2px solid #ddd;
             border-radius: 5px;
+            display: none;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            border: none;
+            background: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .carousel button:hover {
+            background: #0056b3;
+        }
+        .carousel .prev {
+            left: 10px;
+        }
+        .carousel .next {
+            right: 10px;
+        }
+        .download-list {
+            margin-top: 30px;
+        }
+        .download-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .download-item:last-child {
+            border-bottom: none;
+        }
+        .download-button {
+            padding: 8px 16px;
+            border: none;
+            background: #007BFF;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .download-button:hover {
+            background: #0056b3;
         }
         form {
             margin-top: 30px;
@@ -56,10 +112,50 @@
 <body>
     <div class="container">
         <h1>Результат Обнаружения Объектов</h1>
-        <img src="{{ image_path }}" alt="Результат">
+
+        <!-- Carousel -->
+        <div class="carousel">
+            {% for image in images %}
+                <img src="{{ image.boxed_path }}" alt="Обработанное изображение" class="{% if loop.index0 == 0 %}active{% endif %}">
+            {% endfor %}
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+
+        <!-- Download List -->
+        <div class="download-list">
+            {% for image in images %}
+                <div class="download-item">
+                    <span>{{ image.filename }}</span>
+                    <a href="{{ image.clean_path }}" class="download-button" download="blurred_{{ image.filename }}">Скачать</a>
+                </div>
+            {% endfor %}
+        </div>
+
         <form action="/new_predict" method="get">
             <button type="submit">Новый Predict</button>
         </form>
     </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+    </script>
 </body>
 </html>
